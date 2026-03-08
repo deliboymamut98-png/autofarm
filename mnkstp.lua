@@ -24,7 +24,7 @@ local Themes = {
     {Name = "DARK", Bg = Color3.fromRGB(15, 15, 15), Accent = Color3.fromRGB(0, 255, 150)},
     {Name = "OCEAN", Bg = Color3.fromRGB(10, 25, 45), Accent = Color3.fromRGB(0, 190, 255)},
     {Name = "SAKURA", Bg = Color3.fromRGB(35, 15, 25), Accent = Color3.fromRGB(255, 160, 210)},
-    {Name = "EMBER", Bg = Color3.fromRGB(25, 10, 5), Accent = Color3.fromRGB(255, 100, 0)},
+    {Name = "EMBER Creator preference <3", Bg = Color3.fromRGB(25, 10, 5), Accent = Color3.fromRGB(255, 100, 0)},
     {Name = "MIDNIGHT", Bg = Color3.fromRGB(5, 5, 20), Accent = Color3.fromRGB(140, 0, 255)},
     {Name = "CYBERPUNK", Bg = Color3.fromRGB(5, 5, 5), Accent = Color3.fromRGB(255, 255, 0)},
     {Name = "LIGHT", Bg = Color3.fromRGB(240, 240, 240), Accent = Color3.fromRGB(40, 40, 40)},
@@ -666,6 +666,7 @@ UserInputService.InputBegan:Connect(function(i, g)
     end
 
 end)
+
 
 
 
