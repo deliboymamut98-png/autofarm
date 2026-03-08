@@ -12,7 +12,7 @@ local TeleportService = game:GetService("TeleportService")
 
 _G.MenuKey = "Insert"
 _G.TpDelay = 1
-_G.BlurEnabled = true
+_G.BlurEnabled = false
 _G.HudEnabled = true
 _G.AntiAFK = true
 local autoTeleportEnabled = false
@@ -444,7 +444,7 @@ end
 CreateSwitch(SettingsPage, "Anti-AFK", true, function(v) _G.AntiAFK = v end)
 
 
-CreateSwitch(SettingsPage, "Background Blur", true, function(v) 
+CreateSwitch(SettingsPage, "Background Blur", false, function(v) 
     _G.BlurEnabled = v 
     if MainFrame.Visible then
         BlurEffect.Size = v and 18 or 0
@@ -655,4 +655,5 @@ UserInputService.InputBegan:Connect(function(i, g)
         TweenService:Create(MainFrame, TweenInfo.new(0.5, Enum.EasingStyle.Back), {Size = opening and UDim2.new(0, 380, 0, 500) or UDim2.new(0, 380, 0, 0)}):Play()
         TweenService:Create(BlurEffect, TweenInfo.new(0.4), {Size = (opening and _G.BlurEnabled) and 18 or 0}):Play()
     end
+
 end)
