@@ -29,8 +29,6 @@ local Themes = {
     {Name = "CYBERPUNK", Bg = Color3.fromRGB(5, 5, 5), Accent = Color3.fromRGB(255, 255, 0)},
     {Name = "LIGHT", Bg = Color3.fromRGB(240, 240, 240), Accent = Color3.fromRGB(40, 40, 40)},
     {Name = "NEON", Bg = Color3.fromRGB(10, 0, 25), Accent = Color3.fromRGB(0, 255, 255)},
-
-    -- Yeni Temalar
     {Name = "FOREST", Bg = Color3.fromRGB(10, 30, 10), Accent = Color3.fromRGB(0, 200, 100)},
     {Name = "BLOOD", Bg = Color3.fromRGB(30, 0, 0), Accent = Color3.fromRGB(255, 0, 0)},
     {Name = "ICE", Bg = Color3.fromRGB(200, 230, 255), Accent = Color3.fromRGB(0, 170, 255)},
@@ -39,8 +37,6 @@ local Themes = {
     {Name = "MINT", Bg = Color3.fromRGB(10, 30, 25), Accent = Color3.fromRGB(0, 255, 170)},
     {Name = "SUNSET", Bg = Color3.fromRGB(40, 15, 5), Accent = Color3.fromRGB(255, 120, 60)},
     {Name = "SKY", Bg = Color3.fromRGB(20, 40, 70), Accent = Color3.fromRGB(120, 200, 255)},
-
-    -- Chroma (Rainbow)
     {Name = "CHROMA", Bg = Color3.fromRGB(10, 10, 10), Accent = Color3.fromRGB(255, 0, 0)}
 }
 
@@ -670,5 +666,6 @@ UserInputService.InputBegan:Connect(function(i, g)
     end
 
 end)
+
 
 
