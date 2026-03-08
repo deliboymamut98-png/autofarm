@@ -14,7 +14,7 @@ _G.MenuKey = "Insert"
 _G.TpDelay = 1
 _G.BlurEnabled = false
 _G.HudEnabled = true
-_G.AntiAFK = true
+_G.AntiAFK = false
 local autoTeleportEnabled = false
 local currentTargetPos = nil
 local CurrentThemeIndex = 4 
@@ -441,7 +441,7 @@ local function ServerHop()
 end
 
 
-CreateSwitch(SettingsPage, "Anti-AFK", true, function(v) _G.AntiAFK = v end)
+CreateSwitch(SettingsPage, "Anti-AFK", false, function(v) _G.AntiAFK = v end)
 
 
 CreateSwitch(SettingsPage, "Background Blur", false, function(v) 
@@ -503,7 +503,7 @@ HopBtn.MouseButton1Click:Connect(ServerHop)
 
 local PotatoBtn = Instance.new("TextButton", SettingsPage)
 PotatoBtn.Size = UDim2.new(1, 0, 0, 40)
-PotatoBtn.Text = "POTATO MODE (FPS BOOST)"
+PotatoBtn.Text = "FPS BOOST"
 PotatoBtn.BackgroundColor3 = Color3.fromRGB(40,40,40)
 PotatoBtn.TextColor3 = Color3.new(1,1,1)
 PotatoBtn.Font = Enum.Font.GothamBold
@@ -657,3 +657,4 @@ UserInputService.InputBegan:Connect(function(i, g)
     end
 
 end)
+
